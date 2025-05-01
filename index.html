@@ -11,6 +11,14 @@
     />
   </head>
   <body class="container">
+    <nav class="navbar" id="navbar">
+      <a href="#" class="logo">BK</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#fun">Fun</a>
+        <a href="#resume">Resume</a>
+      </div>
+    </nav>
     <div class="titleContainer hidden">
       <div class="row">
         <span style="color: #6635d6; margin-right: 2vw">Welcome!</span>
@@ -21,13 +29,24 @@
     <div class="textContainer hidden">
       <div class="subtitle1 hidden">
         <p style="font-size: 2vw; padding-bottom: 8vh">
-          I am a student at <span style="color: #723503">Brown</span> who took
-          open curriculum to heart. Among the trenches of
-          <span style="color: #20aed1">Computer Networks</span>,
-          <span style="color: #d1c411">Operating and Distributed Systems</span>,
-          and <span style="color: #f26157">Computer Graphics</span>, I explored
-          the <span style="color: #581685">design world</span> with these case
-          studies!
+          I am a student at
+          <span class="fade-in" style="--color: #723503; --delay: 0s"
+            >Brown</span
+          >
+          who took open curriculum to heart. Among the trenches of
+          <span class="fade-in" style="--color: #20aed1; --delay: 1s"
+            >Computer Networks</span
+          >,
+          <span class="fade-in" style="--color: #d1c411; --delay: 1.5s"
+            >Operating and Distributed Systems</span
+          >, and
+          <span class="fade-in" style="--color: #f26157; --delay: 2s"
+            >Computer Graphics</span
+          >, I explored the
+          <span class="fade-in" style="--color: #581685; --delay: 2.5s"
+            >design world</span
+          >
+          with these case studies!
         </p>
         <p style="font-size: 2vw; padding-bottom: 8vh">
           My goal is to become a well-rounded software engineer, so as a part of
@@ -52,9 +71,11 @@
     <div class="portfolio-item hidden">
       <div class="portfolio-content">
         <p class="portfolio-description">
-          A good software engineer understands components both as a <span style="color: #581685">user</span> and as
-          a <span style="color: #581685">developer</span>. How different is a Google Drive search bar from the one
-          in YouTube? Turns out, there are quite a few things to note!
+          A good software engineer understands components both as a
+          <span style="color: #581685">user</span> and as a
+          <span style="color: #581685">developer</span>. How different is a
+          Google Drive search bar from the one in YouTube? Turns out, there are
+          quite a few things to note!
         </p>
         <div class="portfolio-features">
           <ul>
@@ -101,9 +122,11 @@
         <p class="portfolio-description">
           The next stop in our professional development journey is to take a
           more global look at design - when interacting with an interface, how
-          will different <span style="color: #581685">users behave themselves</span>? This case study takes a closer
-          look at a self-ordering kiosk and creates a <span style="color: #581685">storyboard</span> to model
-          consumer behavior.
+          will different
+          <span style="color: #581685">users behave themselves</span>? This case
+          study takes a closer look at a self-ordering kiosk and creates a
+          <span style="color: #581685">storyboard</span> to model consumer
+          behavior.
         </p>
         <div class="portfolio-features">
           <ul>
@@ -132,8 +155,9 @@
         <p class="portfolio-description">
           I have always been amazed by the (potentially fictional) stories of
           people landing a technical job just to fix the problem nobody else got
-          to. This case study gave me a chance to do just that: <span style="color: #581685">redesign</span> a
-          travel website that was <span style="color: #581685">frustrating</span> to use.
+          to. This case study gave me a chance to do just that:
+          <span style="color: #581685">redesign</span> a travel website that was
+          <span style="color: #581685">frustrating</span> to use.
         </p>
         <div class="portfolio-features">
           <ul>
@@ -187,10 +211,11 @@
       <div class="portfolio-content">
         <p class="portfolio-description">
           The last case study is a group project that focused on enhancing the
-          design of certain features of an existing <span style="color: #581685">startup</span>, an invaluable
-          experience for aspiring software developers. The team went through a
-          full <span style="color: #581685">design pipeline</span>, from sketches on paper to an interactive Figma
-          prototype.
+          design of certain features of an existing
+          <span style="color: #581685">startup</span>, an invaluable experience
+          for aspiring software developers. The team went through a full
+          <span style="color: #581685">design pipeline</span>, from sketches on
+          paper to an interactive Figma prototype.
         </p>
         <div class="portfolio-features">
           <ul>
@@ -269,6 +294,13 @@
         } else {
           scrollArrow.classList.remove("hidden-arrow");
         }
+      });
+
+
+      // // Mobile menu toggle
+      mobileMenuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        navbar.classList.remove("transparent");
       });
     </script>
   </body>
