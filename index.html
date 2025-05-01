@@ -14,16 +14,23 @@
     <nav class="navbar" id="navbar">
       <a href="#" class="logo">BK</a>
       <div class="nav-links" id="navLinks">
-        <a href="#home" class="active">Home</a>
-        <a href="#fun">Fun</a>
-        <a href="#resume">Resume</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="#connect">Connect</a>
+        <!-- <a href="fun.html">Fun</a> -->
+        <a href="Bohdan_Karavan_Resume.pdf" download="Bohdan_Karavan_Resume.pdf"
+          >Resume</a
+        >
       </div>
     </nav>
     <div class="titleContainer hidden">
       <div class="row">
-        <span style="color: #6635d6; margin-right: 2vw">Welcome!</span>
+        <span style="color: #6635d6; margin-right: 2vw">Bohdan Karavan</span>
       </div>
-      <span style="font-size: 3vw; color: #581685">Bohdan Karavan</span>
+      <span
+        class="fade-in"
+        style="font-size: 3vw; --color: #581685; --delay: 2.5s"
+        >Aspiring software engineer</span
+      >
       <div class="scroll-arrow" id="scrollArrow">&#8964;</div>
     </div>
     <div class="textContainer hidden">
@@ -50,7 +57,7 @@
         </p>
         <p style="font-size: 2vw; padding-bottom: 8vh">
           My goal is to become a well-rounded software engineer, so as a part of
-          Front-end experience I made a deep dive into the world of
+          my Front End experience I made a deep dive into the world of
           <span style="color: #581685">Interaction Design!</span>
         </p>
       </div>
@@ -235,6 +242,7 @@
         margin-bottom: 4vh;
         font-size: 2vw;
       "
+      id="connect"
     >
       Let's stay in touch!
     </div>
@@ -295,7 +303,6 @@
           scrollArrow.classList.remove("hidden-arrow");
         }
       });
-
 
       // // Mobile menu toggle
       mobileMenuBtn.addEventListener("click", () => {

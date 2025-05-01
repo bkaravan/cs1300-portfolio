@@ -9,7 +9,7 @@
     display: flex;
     justify-content: start;
     align-items: start;
-    font-size: 6vw;
+    font-size: 5vw;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 45vh;
     flex-direction: column;
@@ -211,7 +211,7 @@
 
 .fade-in {
   color: black;
-  animation: fadeColor 10s ease-in-out infinite;
+  animation: fadeColor 6s ease-in-out infinite;
   animation-delay: var(--delay);
 }
 
@@ -219,7 +219,7 @@
   0%, 100% {
     color: black;
   }
-  50% {
+  30%, 80% {
     color: var(--color);
   }
 }
@@ -312,4 +312,23 @@
   .nav-links.active {
     right: 0;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%; /* For 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
