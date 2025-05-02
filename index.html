@@ -24,13 +24,17 @@
     </nav>
     <div class="titleContainer hidden">
       <div class="row">
-        <span style="color: #6635d6; margin-right: 2vw">Bohdan Karavan</span>
+        <div>
+          <p style="color: #6635d6; margin-right: 2vw">Bohdan Karavan</p>
+          <p
+            class="fade-in"
+            style="font-size: 3vw; --color: #581685; --delay: 2.5s"
+            >Aspiring software engineer</p>
+        </div>
+        <div class="portfolio-image-container">
+          <img src="pictures/karavan_picture.jpg" alt="Profile picture." style="margin-left: 10vw;height: 70%; width: 70%; border-radius: 50%;"/>
+        </div>
       </div>
-      <span
-        class="fade-in"
-        style="font-size: 3vw; --color: #581685; --delay: 2.5s"
-        >Aspiring software engineer</span
-      >
       <div class="scroll-arrow" id="scrollArrow">&#8964;</div>
     </div>
     <div class="textContainer hidden">
@@ -239,7 +243,7 @@
       style="
         font-weight: 600;
         color: #581685;
-        margin-bottom: 4vh;
+        margin-bottom: 2vh;
         font-size: 2vw;
       "
       id="connect"
@@ -274,6 +278,28 @@
         <i class="fas fa-envelope fa-lg"></i>
       </a>
     </div>
+
+    <div
+      class="hidden"
+      style="
+        font-weight: 600;
+        color: #581685;
+        margin-bottom: 2vh;
+        font-size: 2vw;
+      "
+    >
+      Credits
+    </div>
+    <div class="portfolio-content hidden">
+      <p class="portfolio-description">
+        Allar Health project with Julia Stepanenko, Simone Dunbar, Wesley Hackett </br>
+        Style inspiration from Simone Dunbar </br>
+        Icons by <a href="https://fontaesome.com/">Font Awesome</a>
+      </p>
+    </div>
+    <footer>
+      <p style="text-align: center;">&copy; 2025 Bohdan Karavan</p>
+    </footer>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const observer = new IntersectionObserver(
